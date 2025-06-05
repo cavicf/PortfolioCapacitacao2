@@ -16,10 +16,16 @@
             </div>
             <h1 class="text-4xl">Portfólio</h1>
         </div>
-        <div class="size-8"><img src="./img/hamburguer.png" alt="icone de navbar"></div>
+        <div class="hidden lg:flex lg:flex-row items-center gap-8">
+            <a class="text-2xl hover:scale-105 hover:text-secondary transition duration-200" href="#home">Início</a>
+            <a class="text-2xl hover:scale-105 hover:text-secondary transition duration-200" href="#projetos">Projetos</a>
+            <a href="tel:+553599906-2468" target="_blank" class="text-2xl font-semibold text-white bg-secondary px-4 py-2 rounded-2xl hover:scale-105 transition duration-200">FALE COMIGO</a>
+
+        </div>
+        <div class="size-8 lg:hidden"><img src="./img/hamburguer.png" alt="icone de navbar"></div>
     </header>
 
-    <section class="text-black bg-white px-6 py-[2.5rem]">
+    <section id="home" class="text-black bg-white px-6 py-[2.5rem]">
         <img src="./img/camily.png" alt="foto da camily" class="min-w-[350px] min-h-[350px] mb-4">
         <div class="flex flex-col gap-12">
             <div class="text-center flex flex-col items-center gap-8">
@@ -45,7 +51,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center gap-8 bg-main px-6 py-8 text-black">
+    <section id="projetos" class="flex flex-col items-center gap-8 bg-main px-6 py-8 text-black">
         <h2 class="text-white font-extrabold text-2xl">ÚLTIMOS PROJETOS</h2>
         <div class="grid grid-flow-row grid-cols-1 gap-12">
             <div class="flex flex-col bg-white max-w-[380px] h-[400px] drop-shadow-lg rounded-lg p-3 gap-4">
