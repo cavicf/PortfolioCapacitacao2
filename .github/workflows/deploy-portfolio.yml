@@ -1,0 +1,36 @@
+name: Deploy Portfolio to GitHub Pages 
+
+on:
+  push:
+    branches:
+      - main 
+  pull_request:
+    branches:
+      - main 
+
+jobs:
+  build-and-deploy: 
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Checkout repository 
+        uses: actions/checkout@v4 
+
+     
+      - name: Setup Node.js 
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' 
+
+      - name: Install dependencies and build Tailwind 
+        run: |
+          cd Portfolio # Navega para a pasta "Portfolio" onde está seu package.json
+          npm install # Instala as dependências (tailwindcss, postcss, autoprefixer, etc.)
+          npx tailwindcss -i ./src/input.css -o ./src/output.css --minify # O seu comando de build Tailwind
+       
+
+      - name: Deploy to GitHub Pages 
+        uses: peaceiris/actions-gh-pages@v4 
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
+          publish_dir: ./Portfolio/src 
