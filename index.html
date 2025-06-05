@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b74d45c939.js" crossorigin="anonymous"></script>
+    <title>Portfólio</title>
+</head>
+<body class="font-main">
+
+    <header class="flex flex-row justify-between items-center px-8 py-9 lg:px-30 bg-black text-white">
+        <div class="flex flex-row items-center gap-4">
+            <div class="size-12">
+                <img src="./img/logo.png" alt="logo do Portfólio">
+            </div>
+            <h1 class="text-4xl">Portfólio</h1>
+        </div>
+        <div class="hidden lg:flex lg:flex-row items-center gap-8">
+            <a class="text-2xl hover:scale-105 hover:text-secondary transition duration-200" href="#home">Início</a>
+            <a class="text-2xl hover:scale-105 hover:text-secondary transition duration-200" href="#projetos">Projetos</a>
+            <a href="tel:+553599906-2468" target="_blank" class="text-2xl font-semibold text-white bg-secondary px-4 py-2 rounded-2xl hover:scale-105 transition duration-200">FALE COMIGO</a>
+
+        </div>
+        <div class="size-8 lg:hidden"><img src="./img/hamburguer.png" alt="icone de navbar"></div>
+    </header>
+
+    <section id="home" class="flex flex-col items-center text-black bg-white px-6 py-[2.5rem] lg:flex-row-reverse lg:px-30 lg:py-[10rem] lg:justify-between">
+        <div class="lg:w-1/2"><img src="./img/camily.png" alt="foto da camily" class="min-w-[350px] min-h-[350px] mb-4 lg:size-[550px]"></div>
+        <div class="flex flex-col gap-12 lg:w-1/2 lg:max-w-[560px]">
+            <div class="text-center flex flex-col items-center lg:items-start lg:gap-10 gap-8 lg:text-start">
+                <div class="flex flex-col gap-8 lg:max-w-3/4">
+                    <h2 class="text-[2.5rem] lg:text-5xl">Conheça a <span class="text-main">Camily</span></h2>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-2xl">Desenvolvedora <span class="text-main">Front-end</span></h3>
+                        <p class="text-base"> Graduada em Tecnologia em Análise e Desenvolvimento de Sistemas pela Universidade São Francisco e estudante de Sistemas de 
+                            Informação na Universidade Federal de Itajubá (UNIFEI), com previsão de formatura para o primeiro semestre de 2028.
+                        </p>
+                    </div>
+                </div>
+                <button class="text-2xl font-semibold text-white bg-secondary px-4 py-2 rounded-2xl hover:scale-105 transition duration-200">SAIBA MAIS</button>
+            </div>
+            <div class="flex flex-row justify-between items-center lg:justify-start lg:gap-8">
+                <p class="text-2xl">Entre em contato!</p>
+                <div class="flex flex-row gap-[1rem]">
+                    <a href="https://www.instagram.com/camilyvictalf/" target="_blank"><i class="fa-brands fa-instagram fa-3x" style="color: #d5744b;"></i></a>
+                    <a href="https://www.linkedin.com/in/camily-victal" target="_blank"><i class="fa-brands fa-linkedin fa-3x" style="color: #d5744b;"></i></a>
+                    <a href="tel:+553599906-2468" target="_blank"><i class="fa-brands fa-whatsapp fa-3x" style="color: #d5744b;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="flex flex-col items-center gap-8 lg:gap-16 bg-main px-6 py-8 lg:py-16 text-black">
+        <h2 class="text-white font-extrabold text-2xl">ÚLTIMOS PROJETOS</h2>
+        <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="flex flex-col bg-white max-w-[380px] h-[400px] drop-shadow-lg rounded-lg p-3 gap-4">
+                <div class="rounded-lg overflow-hidden"><img src="./img/pagina de captura.png" alt="print da página de captura" class="w-full aspect-[16/9] object-cover"></div>
+                <div>
+                    <h3 class="text-lg">Página de Captura</h3>
+                    <p class="text-base text-gray max-h-[150px] overflow-y-auto pr-2 scrollbar-thin">
+                        Página de captura desenvolvida como projeto prático do curso de Desenvolvimento Web. A proposta é criar uma landing page funcional e 
+                        visualmente atrativa para um workshop de marketing, com foco na coleta de informações do usuário por meio de um formulário simples.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white max-w-[380px] h-[400px] drop-shadow-lg rounded-lg p-3 gap-4">
+                <div class="rounded-lg overflow-hidden"><img src="./img/pagina de conteudo.png" alt="print da página de captura" class="w-full aspect-[16/9] object-cover"></div>
+                <div>
+                    <h3 class="text-lg">Página de Conteúdo</h3>
+                    <p class="text-base text-gray max-h-[150px] overflow-y-auto pr-2 scrollbar-thin">
+                        Página de Conteúdo desenvolvida como projeto prático do curso de Desenvolvimento Web. A proposta foi criar uma página informativa inspirada 
+                        em portais de notícias, com foco na organização e apresentação clara de um artigo sobre o consumo de energia de eletrodomésticos, utilizando uma estrutura bem definida e
+                        um layout visualmente atrativo.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white max-w-[380px] h-[400px] drop-shadow-lg rounded-lg p-3 gap-4">
+                <div class="rounded-lg overflow-hidden"><img src="./img/pagina de receitas.png" alt="print da página de captura" class="w-full aspect-[16/9] object-cover"></div>
+                <div>
+                    <h3 class="text-lg">Página de Receitas</h3>
+                    <p class="text-base text-gray max-h-[150px] overflow-y-auto pr-2 scrollbar-thin">
+                        Página de Receitas inspirada no estilo do site TudoGostoso. A proposta foi organizar as informações de forma clara e atrativa, dividindo os conteúdos em cards estilizados 
+                        que apresentam ingredientes, modo de preparo e instruções adicionais, com um design simples, moderno e funcional.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="flex flex-col bg-black text-white p-8 gap-16 lg:items-center lg:gap-8 lg:p-12">
+        <div class="flex flex-col lg:flex-row gap-16 items-center lg:justify-around">
+            <div class="flex flex-col items-center gap-3 lg:w-1/3">
+                <div class="size-16">
+                    <img src="./img/logo.png" alt="logo do portfólio">
+                </div>
+                <p class="text-xl">Feito por Camily • DPJ 2025</p>
+            </div>
+            <div class="text-center gap-2 lg:w-1/3">
+                <h3 class="text-2xl">SOBRE MIM</h3>
+                <p class="text-base">
+                    Meu interesse por tecnologia começou com o incentivo do meu pai, que também é profissional de TI. 
+                    Desde cedo, ele me mostrava como a tecnologia pode ir além do uso cotidiano, sendo uma ferramenta poderosa para criar, conectar pessoas e resolver problemas.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col items-center lg:flex-row lg:gap-2">
+            <p class="text-2xl">Desenvolvido por</p>
+            <div class="max-w-[260px]">
+                <img src="./img/byron.png" alt="logo da byron">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
